@@ -3,6 +3,8 @@ package no.cantara.sample;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
+import io.federecio.dropwizard.swagger.SwaggerBundle;
+import io.federecio.dropwizard.swagger.SwaggerBundleConfiguration;
 
 public class HelloWorldApplication extends Application<HelloWorldConfiguation> {
     public static void main(String[] args) throws Exception {
@@ -16,7 +18,12 @@ public class HelloWorldApplication extends Application<HelloWorldConfiguation> {
 
     @Override
     public void initialize(Bootstrap<HelloWorldConfiguation> bootstrap) {
-        // nothing to do yet
+        bootstrap.addBundle(new SwaggerBundle<HelloWorldConfiguation>() {
+            @Override
+            protected SwaggerBundleConfiguration getSwaggerBundleConfiguration(HelloWorldConfiguation configuration) {
+                return configuration.swaggerBundleConfiguration;
+            }
+        });
     }
 
     @Override

@@ -33,3 +33,7 @@ logging:
       archivedFileCount: 7
       timeZone: Europe/Oslo
       maxFileSize: 10MB
+
+# <a comma separated string of the packages that contain your @Api annotated resources>
+swagger:
+  resourcePackage: no.cantara.sample
