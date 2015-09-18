@@ -1,10 +1,11 @@
-package no.cantara.dwsample;
+package no.cantara.dwsample.resources;
 
 import com.codahale.metrics.annotation.Timed;
 import com.google.common.base.Optional;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
+import no.cantara.dwsample.api.Saying;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

@@ -5,6 +5,8 @@ import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
 import io.federecio.dropwizard.swagger.SwaggerBundle;
 import io.federecio.dropwizard.swagger.SwaggerBundleConfiguration;
+import no.cantara.dwsample.health.TemplateHealthCheck;
+import no.cantara.dwsample.resources.HelloWorldResource;
 
 public class HelloWorldApplication extends Application<HelloWorldConfiguation> {
     public static void main(String[] args) throws Exception {

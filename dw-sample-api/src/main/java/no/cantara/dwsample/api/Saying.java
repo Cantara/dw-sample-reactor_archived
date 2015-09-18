@@ -1,4 +1,4 @@
-package no.cantara.dwsample;
+package no.cantara.dwsample.api;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.hibernate.validator.constraints.Length;

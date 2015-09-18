@@ -13,9 +13,9 @@ hs_err_pid*
 
 # IntelliJ IDEA
 *.iml
-/.idea/
+.idea/
 
 # Output folder
-/target/
-/log/
+target/
+log/
 dependency-reduced-pom.xml

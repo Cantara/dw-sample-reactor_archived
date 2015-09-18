@@ -1,4 +1,4 @@
-package no.cantara.dwsample;
+package no.cantara.dwsample.health;
 
 import com.codahale.metrics.health.HealthCheck;
 
