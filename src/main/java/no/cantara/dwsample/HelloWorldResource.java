@@ -1,4 +1,4 @@
-package no.cantara.sample;
+package no.cantara.dwsample;
 
 import com.codahale.metrics.annotation.Timed;
 import com.google.common.base.Optional;

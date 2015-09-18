@@ -17,7 +17,7 @@ logging:
   level: INFO
 
   loggers:
-    no.cantara.sample: DEBUG
+    no.cantara.dwsample: DEBUG
 
 # Logback's Time Based Rolling Policy - archivedLogFilenamePattern: /tmp/application-%d{yyyy-MM-dd}.log.gz
 # Logback's Size and Time Based Rolling Policy -  archivedLogFilenamePattern: /tmp/application-%d{yyyy-MM-dd}-%i.log.gz
@@ -36,4 +36,4 @@ logging:
 
 # <a comma separated string of the packages that contain your @Api annotated resources>
 swagger:
-  resourcePackage: no.cantara.sample
+  resourcePackage: no.cantara.dwsamplele

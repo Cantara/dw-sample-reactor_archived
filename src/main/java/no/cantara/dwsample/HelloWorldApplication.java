@@ -1,4 +1,4 @@
-package no.cantara.sample;
+package no.cantara.dwsample;
 
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
