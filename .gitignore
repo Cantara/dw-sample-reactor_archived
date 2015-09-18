@@ -17,3 +17,5 @@ hs_err_pid*
 
 # Output folder
 /target/
+/log/
+dependency-reduced-pom.xml
