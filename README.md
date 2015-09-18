@@ -1,2 +1,2 @@
-# devops-service-template
-Template for devops ready applications with default technology setup for IoC, REST, logging, healthchecks, monitoring, packaging and more. 
+# dw-sample-reactor
+Template for devops ready dropwizard applications with default technology setup for IoC, REST, logging, healthchecks, monitoring, packaging and more.
