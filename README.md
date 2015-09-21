@@ -1,7 +1,8 @@
 # dw-sample-reactor
+=====
 Template for devops-ready applications.
 Default technology setup for: 
-* webserver (Jetty)
+* Webserver (Jetty)
 * IoC, 
 * REST (jersey)
 * Logging
@@ -15,3 +16,13 @@ Default technology setup for:
 
 
 Extension of the setup found on <a href="http://www.dropwizard.io/"/>DropWiard</a>
+
+# How To Use
+=====
+
+TODO
+
+# How to Install
+====
+
+TODO
