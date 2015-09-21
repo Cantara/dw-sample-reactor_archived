@@ -9,7 +9,8 @@ Default technology setup for:
 * Healthchecks
 * Monitoring
 * Packaging
-* Configuration (Constrett)
+* Configuration (Constretto?/Dropwizard?)
+* Security (Whydah/OAuth2)
 * Docker enabled.
 * ... and more to come.
 
