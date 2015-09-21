@@ -36,4 +36,4 @@ logging:
 
 # <a comma separated string of the packages that contain your @Api annotated resources>
 swagger:
-  resourcePackage: no.cantara.dwsamplele
+  resourcePackage: no.cantara.dwsample
