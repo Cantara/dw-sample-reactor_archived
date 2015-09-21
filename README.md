@@ -10,6 +10,7 @@ Default technology setup for:
 * Monitoring
 * Packaging
 * Configuration (Constrett)
+* Docker enabled.
 * ... and more to come.
 
 
