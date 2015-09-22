@@ -15,7 +15,7 @@ Default technology setup for:
 * ... and more to come.
 
 
-Extension of the setup found on <a href="http://www.dropwizard.io/"/>DropWiard</a>
+Extension of the setup found on <a href="http://www.dropwizard.io/"/>DropWizard</a>
 
 # How To Use
 
