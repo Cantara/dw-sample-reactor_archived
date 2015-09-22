@@ -6,11 +6,14 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import no.cantara.dwsample.HelloWorldDropwizardConfiguration;
+import no.cantara.dwsample.api.Planet;
 import no.cantara.dwsample.api.Saying;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
@@ -38,6 +41,15 @@ public class HelloWorldResource {
     @Timed
     public Saying sayHello(@QueryParam("name") @ApiParam(defaultValue = "Mr. Smith") Optional<String> name) {
         final String value = String.format(template, name.or(defaultName));
+        return new Saying(counter.incrementAndGet(), value);
+    }
+
+    @POST
+    @ApiOperation("Post planetName and yourName and be greeted.")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Timed
+    public Saying hello(Planet planet) {
+        final String value = "Hello " + planet.getYourName() + " on planet " + planet.getPlanetName();
         return new Saying(counter.incrementAndGet(), value);
     }
 }
