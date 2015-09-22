@@ -5,7 +5,7 @@ import io.dropwizard.Configuration;
 import io.federecio.dropwizard.swagger.SwaggerBundleConfiguration;
 import org.hibernate.validator.constraints.NotEmpty;
 
-public class HelloWorldConfiguation extends Configuration {
+public class HelloWorldDropwizardConfiguration extends Configuration {
     @NotEmpty
     private String template;
 

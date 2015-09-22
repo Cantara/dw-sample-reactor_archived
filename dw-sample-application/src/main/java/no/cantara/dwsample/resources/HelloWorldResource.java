@@ -5,7 +5,10 @@ import com.google.common.base.Optional;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
+import no.cantara.dwsample.HelloWorldDropwizardConfiguration;
 import no.cantara.dwsample.api.Saying;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -17,14 +20,16 @@ import java.util.concurrent.atomic.AtomicLong;
 @Path("/hello-world")
 @Api("/hello-world")
 @Produces(MediaType.APPLICATION_JSON)
+@Service
 public class HelloWorldResource {
     private final String template;
     private final String defaultName;
     private final AtomicLong counter;
 
-    public HelloWorldResource(String template, String defaultName) {
-        this.template = template;
-        this.defaultName = defaultName;
+    @Autowired
+    public HelloWorldResource(HelloWorldDropwizardConfiguration configuration) {
+        this.template = configuration.getTemplate();
+        this.defaultName = configuration.getDefaultName();
         this.counter = new AtomicLong();
     }
 

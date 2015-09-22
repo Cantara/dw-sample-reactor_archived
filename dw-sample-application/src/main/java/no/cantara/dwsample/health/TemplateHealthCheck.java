@@ -1,12 +1,17 @@
 package no.cantara.dwsample.health;
 
 import com.codahale.metrics.health.HealthCheck;
+import no.cantara.dwsample.HelloWorldDropwizardConfiguration;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service("template")
 public class TemplateHealthCheck extends HealthCheck {
     private final String template;
 
-    public TemplateHealthCheck(String template) {
-        this.template = template;
+    @Autowired
+    public TemplateHealthCheck(HelloWorldDropwizardConfiguration configuration) {
+        this.template = configuration.getTemplate();
     }
 
     @Override
