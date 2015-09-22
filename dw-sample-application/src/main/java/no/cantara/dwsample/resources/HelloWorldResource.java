@@ -5,10 +5,10 @@ import com.google.common.base.Optional;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
-import no.cantara.dwsample.HelloWorldDropwizardConfiguration;
 import no.cantara.dwsample.api.Planet;
 import no.cantara.dwsample.api.Saying;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.constretto.annotation.Configuration;
+import org.constretto.annotation.Configure;
 import org.springframework.stereotype.Service;
 
 import javax.ws.rs.Consumes;
@@ -29,10 +29,10 @@ public class HelloWorldResource {
     private final String defaultName;
     private final AtomicLong counter;
 
-    @Autowired
-    public HelloWorldResource(HelloWorldDropwizardConfiguration configuration) {
-        this.template = configuration.getTemplate();
-        this.defaultName = configuration.getDefaultName();
+    @Configure
+    public HelloWorldResource(@Configuration String template, @Configuration String defaultName) {
+        this.template = template;
+        this.defaultName = defaultName;
         this.counter = new AtomicLong();
     }
 
