@@ -4,6 +4,14 @@ public class Planet {
     private String planetName;
     private String yourName;
 
+    public Planet() {
+    }
+
+    public Planet(String planetName, String yourName) {
+        this.planetName = planetName;
+        this.yourName = yourName;
+    }
+
     public String getPlanetName() {
         return planetName;
     }
