@@ -27,7 +27,7 @@ public class HelloWorldResourceClientTest {
     @Test
     public void thatSayHelloGetRequestIsBuiltCorrectly() {
         HelloWorldResourceClient helloWorldResourceClient = new HelloWorldResourceClient(dropwizard.baseUri());
-        Saying saying = helloWorldResourceClient.sayHello("Mr. Grinch");
+        Saying saying = helloWorldResourceClient.hello("Mr. Grinch");
         assertEquals(new Saying(1, "Hello there, Mr. Grinch"), saying);
     }
 

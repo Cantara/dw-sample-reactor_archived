@@ -34,7 +34,7 @@ public class HelloWorldResourceClient implements HelloWorldResource {
         this(UriBuilder.fromPath(host).scheme("http").port(port).build());
     }
 
-    public Saying sayHello(String name) {
+    public Saying hello(String name) {
         return hello(Optional.of(name));
     }
 
