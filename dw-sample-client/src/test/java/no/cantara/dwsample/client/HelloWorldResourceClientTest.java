@@ -1,12 +1,12 @@
 package no.cantara.dwsample.client;
 
-import com.google.common.base.Optional;
-import io.dropwizard.testing.junit.DropwizardClientRule;
 import no.cantara.dwsample.api.HelloWorldResource;
 import no.cantara.dwsample.api.Planet;
 import no.cantara.dwsample.api.Saying;
 import org.junit.ClassRule;
 import org.junit.Test;
+
+import java.util.Optional;
 
 import static org.junit.Assert.assertEquals;
 
@@ -22,7 +22,7 @@ public class HelloWorldResourceClientTest {
     }
 
     @ClassRule
-    public final static DropwizardClientRule dropwizard = new DropwizardClientRule(new HelloWorldResourceTestDouble());
+    public final static DropwizardJava8ClientRule dropwizard = new DropwizardJava8ClientRule(new HelloWorldResourceTestDouble());
 
     @Test
     public void thatSayHelloGetRequestIsBuiltCorrectly() {

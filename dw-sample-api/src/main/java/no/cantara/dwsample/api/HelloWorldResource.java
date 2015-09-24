@@ -1,6 +1,5 @@
 package no.cantara.dwsample.api;
 
-import com.google.common.base.Optional;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
@@ -12,13 +11,14 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
+import java.util.Optional;
 
 @Path(HelloWorldResource.PATH)
 @Api(HelloWorldResource.PATH)
 @Produces(MediaType.APPLICATION_JSON)
 public interface HelloWorldResource {
 
-    public static final String PATH = "hello-world";
+    public static final String PATH = "/hello-world";
     public static final String QUERY_PARAM_GET_HELLO_NAME = "name";
 
     @GET

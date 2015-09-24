@@ -23,6 +23,10 @@
             <artifactId>dropwizard-core</artifactId>
         </dependency>
         <dependency>
+            <groupId>io.dropwizard.modules</groupId>
+            <artifactId>dropwizard-java8</artifactId>
+        </dependency>
+        <dependency>
             <groupId>com.smoketurner</groupId>
             <artifactId>dropwizard-swagger</artifactId>
         </dependency>

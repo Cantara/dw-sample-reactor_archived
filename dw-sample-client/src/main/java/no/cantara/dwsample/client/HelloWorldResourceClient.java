@@ -1,6 +1,5 @@
 package no.cantara.dwsample.client;
 
-import com.google.common.base.Optional;
 import no.cantara.dwsample.api.HelloWorldResource;
 import no.cantara.dwsample.api.Planet;
 import no.cantara.dwsample.api.Saying;
@@ -16,6 +15,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriBuilder;
 import java.net.URI;
+import java.util.Optional;
 
 public class HelloWorldResourceClient implements HelloWorldResource {
 

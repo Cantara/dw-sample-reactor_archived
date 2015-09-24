@@ -3,6 +3,7 @@ package no.cantara.dwsample;
 import com.codahale.metrics.health.HealthCheck;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.dropwizard.Application;
+import io.dropwizard.java8.Java8Bundle;
 import io.dropwizard.lifecycle.Managed;
 import io.dropwizard.servlets.tasks.Task;
 import io.dropwizard.setup.Bootstrap;
@@ -33,6 +34,7 @@ public class HelloWorldApplication extends Application<HelloWorldDropwizardConfi
     @Override
     public void initialize(Bootstrap<HelloWorldDropwizardConfiguration> bootstrap) {
         bootstrap.getObjectMapper().setSerializationInclusion(JsonInclude.Include.NON_NULL);
+        bootstrap.addBundle(new Java8Bundle());
         bootstrap.addBundle(new SwaggerBundle<HelloWorldDropwizardConfiguration>() {
             @Override
             protected SwaggerBundleConfiguration getSwaggerBundleConfiguration(HelloWorldDropwizardConfiguration configuration) {
