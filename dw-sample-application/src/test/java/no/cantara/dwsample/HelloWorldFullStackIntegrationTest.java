@@ -2,6 +2,7 @@ package no.cantara.dwsample;
 
 import io.dropwizard.testing.ResourceHelpers;
 import io.dropwizard.testing.junit.DropwizardAppRule;
+import no.cantara.dwsample.api.HelloWorldResource;
 import no.cantara.dwsample.api.Planet;
 import no.cantara.dwsample.api.Saying;
 import org.glassfish.jersey.client.JerseyClientBuilder;
@@ -25,7 +26,7 @@ public class HelloWorldFullStackIntegrationTest {
         Client client = JerseyClientBuilder.createClient();
 
         Response response = client.target(
-                String.format("http://localhost:%d/hello-world", RULE.getLocalPort()))
+                String.format("http://localhost:%d" + HelloWorldResource.PATH, RULE.getLocalPort()))
                 .request()
                 .get();
 
@@ -37,7 +38,7 @@ public class HelloWorldFullStackIntegrationTest {
         Client client = JerseyClientBuilder.createClient();
 
         Response response = client.target(
-                String.format("http://localhost:%d/hello-world", RULE.getLocalPort()))
+                String.format("http://localhost:%d" + HelloWorldResource.PATH, RULE.getLocalPort()))
                 .request()
                 .post(Entity.json(new Planet("Neptune", "Bad Santa")));
 
