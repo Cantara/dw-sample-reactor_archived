@@ -38,6 +38,7 @@
     <properties>
         <dropwizard.version>0.9.0-rc4</dropwizard.version>
         <dropwizard.java8.version>0.8.0-2</dropwizard.java8.version>
+        <dropwizard.metrics.version>3.1.2</dropwizard.metrics.version>
         <dropwizard-swagger.version>0.7.1</dropwizard-swagger.version>
         <swagger-annotations.version>1.5.3</swagger-annotations.version>
         <javax.ws.rs-api.version>2.0.1</javax.ws.rs-api.version>
@@ -76,9 +77,24 @@
                 <scope>test</scope>
             </dependency>
             <dependency>
+                <groupId>io.dropwizard</groupId>
+                <artifactId>dropwizard-jetty</artifactId>
+                <version>${dropwizard.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.dropwizard</groupId>
+                <artifactId>dropwizard-jersey</artifactId>
+                <version>${dropwizard.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>io.dropwizard.modules</groupId>
                 <artifactId>dropwizard-java8</artifactId>
                 <version>${dropwizard.java8.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.dropwizard.metrics</groupId>
+                <artifactId>metrics-healthchecks</artifactId>
+                <version>${dropwizard.metrics.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.smoketurner</groupId>
