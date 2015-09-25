@@ -3,7 +3,7 @@ package no.cantara.dwsample.resources;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jdk8.Jdk8Module;
-import com.fasterxml.jackson.datatype.jsr310.JSR310Module;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import io.dropwizard.jackson.Jackson;
 import io.dropwizard.java8.jersey.OptionalMessageBodyWriter;
 import io.dropwizard.java8.jersey.OptionalParamFeature;
@@ -32,7 +32,7 @@ public class PersonResourceTest {
     private static final ObjectMapper MAPPER = Jackson.newObjectMapper()
             .setSerializationInclusion(JsonInclude.Include.NON_NULL)
             .registerModules(new Jdk8Module())
-            .registerModules(new JSR310Module());
+            .registerModules(new JavaTimeModule());
 
     private static final Validator VALIDATOR = Validation.byProvider(HibernateValidator.class).configure().addValidatedValueHandler(
             new io.dropwizard.java8.validation.valuehandling.OptionalValidatedValueUnwrapper())
