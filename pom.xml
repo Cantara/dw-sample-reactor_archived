@@ -48,7 +48,7 @@
         <jackson.version>2.10.0</jackson.version>
         <spring.version>5.2.0.RELEASE</spring.version>
         <hibernate-validator.version>5.3.6.Final</hibernate-validator.version>
-        <constretto.version>2.2.2</constretto.version>
+        <constretto.version>2.2.3</constretto.version>
         <guava.version>18.0</guava.version>
         <assertj.version>3.2.0</assertj.version>
         <junit.version>4.13.1</junit.version>
