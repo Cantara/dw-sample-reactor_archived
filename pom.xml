@@ -37,7 +37,7 @@
 
     <properties>
         <slf4j.version>1.7.12</slf4j.version>
-        <logback.version>1.2.0</logback.version>
+        <logback.version>1.2.11</logback.version>
         <dropwizard.version>0.9.0-rc4</dropwizard.version>
         <dropwizard.java8.version>0.8.0-2</dropwizard.java8.version>
         <dropwizard.metrics.version>3.1.2</dropwizard.metrics.version>
