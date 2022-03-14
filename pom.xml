@@ -58,7 +58,7 @@
         <xml-apis.version>1.4.01</xml-apis.version>
         <javax.annotation-api.version>1.2</javax.annotation-api.version>
         <aopalliance-repackaged.version>2.4.0-b31</aopalliance-repackaged.version>
-        <jsr305.version>3.0.0</jsr305.version>
+        <jsr305.version>3.0.2</jsr305.version>
     </properties>
 
     <dependencyManagement>
