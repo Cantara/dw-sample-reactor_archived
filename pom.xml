@@ -41,7 +41,7 @@
         <dropwizard.version>0.9.3</dropwizard.version>
         <dropwizard.java8.version>0.9.0-1</dropwizard.java8.version>
         <dropwizard.metrics.version>3.1.2</dropwizard.metrics.version>
-        <dropwizard-swagger.version>0.7.1</dropwizard-swagger.version>
+        <dropwizard-swagger.version>0.9.3-3</dropwizard-swagger.version>
         <swagger-annotations.version>1.6.6</swagger-annotations.version>
         <javax.ws.rs-api.version>2.0.1</javax.ws.rs-api.version>
         <jersey.version>2.35</jersey.version>
